@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+    <left>
+        <AnchorPane prefHeight="400.0" prefWidth="242.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="112.0" fitWidth="126.0" layoutX="65.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/image2.png" />
+                    </image>
+                </ImageView>
+                <Text layoutX="14.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Up Arrow:     Rotate Left" wrappingWidth="214.13665771484375">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Down Arrow:   Rotate Right" wrappingWidth="223.73663330078125">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Left Arrow:   Move Left" wrappingWidth="214.13665771484375">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Right Arrow:  Move Right" wrappingWidth="214.13665771484375">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Space Key:    Drop" wrappingWidth="214.13665771484375">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shift Key:    Move Fast" wrappingWidth="214.13665771484375">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Instructions:" wrappingWidth="214.13665771484375">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C Key:        Swap" wrappingWidth="214.13665771484375">
+                    <font>
+                        <Font name="Courier New" size="14.0" />
+                    </font>
+                </Text>
+            </children>
+        </AnchorPane>
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="373.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="79.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/image1.png" />
+                    </image>
+                </ImageView>
+                <Label layoutX="35.0" layoutY="180.0" text="Username:">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="usernameField" layoutX="141.0" layoutY="180.0" />
+                <Button layoutX="55.0" layoutY="340.0" mnemonicParsing="false" onAction="#loginButtonOnAction" style="-fx-background-color: #6C63FF; -fx-pref-width: 100;" text="Login" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
